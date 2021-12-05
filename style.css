@@ -1,0 +1,1053 @@
+/*==== ESTILO GERAL ====*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{}
+
+.container1{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/DJ+Marshmellow.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position:center ;
+    padding: 0 8%;
+    position: relative;
+
+}
+/*==== ESTILO MENU TOP ====*/
+
+.logo{
+    width: 110px;
+    cursor: pointer;
+}
+
+.menu_top{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*define a direção em que as linhas são empilhadas.flex-wrap*/
+    width: 100%;
+    padding: 5px 0;
+}
+
+
+.menu_top ul{
+    flex:1;
+    width: 10px;
+    text-align: right;
+    padding-right: 10px;
+    display: grid; /*mudar*/
+    grid-template-columns: 1f 1fr;
+}
+
+.menu_top ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+.menu_top ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.menu_top ul li a::after{
+    background: #fff;
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: width .3s;
+}
+
+.menu_top ul li a:hover::after{
+    width: 50%;
+}
+.cart-icon i {
+    margin-right: 10px;
+    width: 5px;
+    transition: color .2s;
+
+}
+
+.cart-icon a {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    transition: color .2s;
+    margin:0 10px 0 25px; /*mudar*/
+}
+.cart-icon a:hover{
+    color: rgba(116, 177, 228, 0.63);
+}
+
+.cart-icon a:active{
+    color: rgb(69, 185, 170);
+}
+
+/* ==== ESTILO TEXTO ==== */
+
+.text-box{
+
+    color: #fff;
+    position: absolute;
+    bottom:8% ;
+
+}
+
+.equipe{
+    display: none;
+
+}
+
+.text-box p{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Montagu Slab', serif;
+
+}
+.nome-dj-desktop{
+    display: none;
+}
+.nome-dj{
+    display: flex;
+    height: 100%;
+    align-self: center;
+    font-size: 3.5em;
+    line-height: 160px;
+    /*margin-left: -10px; mudar */
+    color: transparent;
+    -webkit-text-stroke: 1px #fff ;
+    background: url(images/back.png);
+    -webkit-background-clip: text; /*define se o fundo de um elemento se estende abaixo de sua caixa de borda,
+    faz o texto ficar atras do background*/
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+.text-box h1{
+    display: flex;
+    align-self: center;
+    font-size: 3em;
+    line-height: 90px;
+    /*margin-left: -10px; mudar */
+    color: transparent;
+    -webkit-text-stroke: 1px #fff ;
+    background: url(images/back.png);
+    -webkit-background-clip: text; /*define se o fundo de um elemento se estende abaixo de sua caixa de borda,
+    faz o texto ficar atras do background*/
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0 ;/**/
+    }
+
+}
+
+.text-box h3{
+    font-size: 15px;
+    font-weight: 550;
+    /*font-size: 30px; mudar*/
+}
+
+/*==== ESTILO CONTATO  ====*/
+.text-box .contato{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    margin-top: 20px;
+}
+
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    margin-right: 15px;
+    align-items: center;
+    margin-bottom: 10px; /*mudar tirar*/
+    display: flex;
+
+}
+.contato a:hover{
+    background-color: rgba(91, 128, 158, 0.63);
+}
+.contato a:active{
+    background-color: rgba(65, 169, 187, 0.411);
+}
+
+.text-box span{
+    font-size: 20px;
+    line-height: 15px;
+    margin-left:5px ;    /*arrumar seta*/
+    font-family: 'Montagu Slab', serif;
+}
+
+.sub_text span {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/*ESTILO DOS ICONS*/
+.icons{
+    position: absolute;
+    /*top: 1%;  mudar para bot*/
+    right: 2%; /*mudar 5%*/
+}
+.icons a{
+    display:flex;
+    flex-direction: column;
+    width: 25px;
+    margin: 11px 5px;
+    font-size: 20px; /*mudar 30px*/
+    color: rgb(255, 255, 255);
+
+}
+
+.icons a:hover{
+    color: rgb(21, 77, 122);
+}
+@media screen and (min-width: 556px) {
+    .menu_top ul {
+        display: inline-block;
+    }
+    .equipe{
+        display: flex;
+        font-size: 35px;
+        font-weight: 600;
+        font-family: 'Montagu Slab', serif;
+        color: #fff;
+    }
+
+    .text-box p {
+        display: none;
+
+    }
+
+    .text-box h3{
+        font-size: 22px;
+    }
+
+    .text-box a span{
+        font-size:30px;
+
+    }
+    .text-box span{
+        font-size: 30px;
+
+    }
+
+    .sub_text span {
+        font-size: 22px;
+    }
+
+    .text-box h1 {
+        display: none;
+
+    }
+    .nome-dj-desktop{
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        align-content: center;
+
+
+    }
+    .nome-dj{
+        font-size: 4em;
+        align-items: center;
+        line-height: 120px
+
+    }
+
+    .icons a{
+        font-size: 30px;
+        margin: 25px 5px;
+
+    }
+    .menu_top ul li a{
+        font-size: 20px;
+    }
+    .galeria img{
+        width: 100% ;
+        display: block;
+    }
+    .galeria span{
+        top: 40%;
+        left: 25%;
+        font-size: 2rem ;
+
+    }
+    /*braking point Projeto */
+    .container-fundo{
+
+        font-size: 14px ;
+
+    }
+    .fundo-galeria h2, .titulo h2{
+        font-size: 3em ;
+        letter-spacing: 0.5em;
+
+    }
+
+    .fundo-galeria i {
+        opacity: 1 !important;
+    }
+
+    .fundo-galeria h2{
+        font-size: 4.0em !important;
+    }
+    .container-feedback {
+        overflow-x:hidden !important;
+    }
+
+}
+
+@media only screen and (min-width: 1020px) {
+
+    .nome-dj-desktop{
+        height: 600px;
+
+
+    }
+    .nome-dj{
+        font-size: 9.2em;
+
+
+    }
+    .equipe{
+        font-size: 50px;
+        margin-top: 50px;
+
+    }
+    .text-box h3{
+        font-size: 29px;
+    }
+
+    /*braking point Projeto */
+    .fundo-galeria i{
+
+        font-size: 2em !important;
+    }
+
+    .fundo-projeto h2{
+        font-size: 6em ;
+        letter-spacing: .8em ;
+
+    }
+    .projetos{
+        flex: 1 1 500px !important;
+
+    }
+    .menu_top ul li a{
+        font-size: 25px;
+    }
+    .icons a{
+        font-size: 35px;
+        margin: 25px 10px;
+
+    }
+    .container-feedback,.rodape {
+        overflow-x: none !important;
+    }
+
+
+
+}
+
+
+/* ========  ESTILO SEGUNDA 2 SEÇÃO ========  */
+.container2{
+    background: linear-gradient(90deg, rgb(25, 60, 102), rgb(54, 17, 83));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    min-height: 60vh;
+    width: 100%;
+
+}
+
+.fundo-galeria{
+    background: url(images/fundodividir.jpg) top/cover fixed no-repeat;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.fundo-galeria .containei-icons-galeria{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+
+}
+
+.fundo-galeria i {
+    color: rgba(15, 15, 15, 0.192);
+    transition: 1s;
+    padding: 5px;
+    user-select: none;
+    cursor: default;
+    font-size:1.9rem;
+    animation: cores 1s;
+}
+.fundo-galeria i:hover{
+    color: rgb(83, 226, 0);
+    filter:drop-shadow(0 0 5px rgb(60, 255, 0));
+    filter:drop-shadow(0 0 10px rgb(0, 255, 0));
+    filter:drop-shadow(0 0 15px rgb(9, 255, 0));
+    transition: 0s;
+
+
+}
+@keyframes cores {
+    0%{
+    }
+}
+
+.fundo-galeria h2{
+    width: 100%;
+    font-size: 2.4em;
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    color: rgb(248, 242, 242);
+    letter-spacing: 0.5em;
+    font-family: 'Montagu Slab', serif;
+
+}
+
+.separação{
+    width: 100%;
+}
+.container-galeria{
+    display: flex;
+    max-width: 90%;
+    min-height: 40vh;/*rever isso */
+    flex-wrap:wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.galeria{
+    
+    max-width: 500px ;
+    position: relative;
+    flex: 1 1 400px;
+    margin: 10px;
+}
+
+.galeria img{
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+    transition: .7s linear;
+    box-shadow: -5px 7px 5px 0px rgba(128, 19, 179, 0.267);
+
+}
+.galeria img:hover{
+    transform: scale(1.1);
+    opacity: .6;
+}
+
+
+
+.galeria img:hover{
+    filter: drop-shadow(0 0 10px rgb(60, 7, 253))
+
+}
+
+.galeria span{
+    color: rgb(201, 198, 198);
+    position: absolute;
+    display: flex;
+    top: 40%;
+    left: 20%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform:uppercase
+}
+iframe{
+    margin: 20px 0;
+}
+#slider{
+    height: 320px;
+    width: 80%;
+}
+
+/* ======= ESTILO DA SEGUNDA  3 SEÇÃO ========== */
+.container3{ /*"body"*/
+    min-height: 90vh;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(128, 128, 128);
+    background:linear-gradient(rgba(58, 56, 56, 0.548),rgba(31, 28, 28, 0.5)), url(images/djfundo3.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+
+
+}
+.container_about{
+    position: relative;
+    overflow: hidden; /*para nao ter risco de qquebrar img */
+    display: flex;
+    width: 1100px;
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap; /*permite a quebra dos elementos . sem fica um ao lado do outro*/
+    padding: 30px;
+
+}
+.titulo {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo h2{
+    display: flex;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(229, 248, 248);
+    letter-spacing: 0.3em;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: -3px 1px 14px 4px rgba(0, 0, 255, 0.452);
+    font-family: 'Montagu Slab', serif;
+    text-shadow: 2px 2px 2px rgba(70, 223, 223, 0.527),
+        2px 2px 4px rgba(70, 213, 223, 0.938),
+        2px 2px 8px rgba(149, 70, 223, 0.938);
+}
+
+.container_about .card_text{
+    display: flex;
+    flex-direction: column; /*trasnforma os elemtnos flex em colunas */
+    max-width: 320px;
+    height: 230px; /*mudar 200 +ou-*/
+    position: relative;
+    background: rgba(189, 194, 204, 0.315);
+    margin: 30px 10px;
+    padding: 10px 15px;
+    box-shadow: -4px 6px 5px 1px rgba(0, 0, 0, 0.432);
+    transition: .6s ease-in-out;
+
+}
+.container_about .card_text:hover{
+    height: 420px;
+    background: rgb(189, 194, 204);
+}
+
+.img_box{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    top: -50px;
+    overflow: hidden;
+    transition: .6s;
+    
+}
+
+.img_box:hover{
+    overflow: visible;
+}
+.img_box h3{
+    display: flex;
+    position: absolute;
+    bottom:10%;
+    left: 2%;
+    font-size: 2.9rem;
+    z-index: 10;
+    color: rgb(164, 244, 250);
+    font-family: 'Montagu Slab', serif;
+    text-shadow: 2px 2px 2px rgba(70, 223, 223, 0.527),
+                 2px 2px 4px rgba(70, 213, 223, 0.938),
+                 2px 2px 8px rgba(149, 70, 223, 0.938);
+
+}
+.card_text :first-child {
+
+}
+
+.img_box .light{
+    display: block;
+    position: absolute;
+}
+.img_box:hover .light {
+    display: none;
+}
+
+/*estilo light*/
+.img_box .light:nth-child(1){ /*1o span*/
+    background: linear-gradient(90deg, transparent,rgb(109, 3, 248));
+    top: 0;
+    left: -100px;
+    width: 150px;
+    height: 5px;
+    animation:  girar1 2s linear infinite;
+    animation-delay: 0.1s ;
+}
+@keyframes girar1{
+    0%{
+        left: -100;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.img_box .light:nth-child(3){ /*2o span*/
+    background: linear-gradient(200deg, transparent,rgb(7, 23, 253));
+    right: -100px;
+    bottom: 0;
+    width: 150px;
+    height: 5px;
+    animation:  girar3 2s linear infinite;
+    animation-delay: .1s ;
+}
+
+
+@keyframes girar3{
+
+    0%{
+        right: -100;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.img_box .light:nth-child(2){ /*2o span*/
+    background: linear-gradient(180deg, transparent,rgb(114, 7, 253));
+    right: 0;
+    top: -100px;
+    width: 5px;
+    height: 150px;
+    animation:  girar2 2s linear infinite;
+    animation-delay: .9s ;
+}
+
+@keyframes girar2{
+
+    0%{
+        top: -100;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+.img_box .light:nth-child(4){ /*2o span*/
+    background: linear-gradient(360deg, transparent,rgb(7, 23, 253));
+    bottom: -100px; /*testa com 0*/
+    left: 0px;
+    width: 5px;
+    height: 150px;
+    animation:  girar4 2s linear infinite;
+    animation-delay: .9s ;
+}
+
+@keyframes girar4{
+
+    0%{
+        bottom: -100;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+.img_box img {
+    max-width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.img_box img:hover{ /*colocar cor atras dos elemento, pode ser feito em varias coisas*/
+    filter:drop-shadow(0 0 10px rgb(60, 7, 253))
+        drop-shadow(0 0 20px rgb(60, 7, 253))
+}
+/* estilo do teXto ABOUT */
+.text_box {
+
+    position: relative;
+    text-align: center;
+    margin-top: -140px;
+    padding: 5px 2px;
+    color: #111;
+    visibility: hidden;
+    opacity:0 ;
+    transition: 0.8s ease-out;/*mesma coisa que o outro*/
+}
+
+.container_about .card_text:hover .text_box{ /* tem  falar todo caminho ate o filho para funcionar o hover .. */
+    visibility: visible ;
+    opacity: 1;
+    margin-top: -40px;
+
+}
+
+.text_box h2{
+    font-family: 'Montagu Slab', serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+
+}
+
+
+.text_box p {
+    font-family: 'Montagu Slab', serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.text_box span{
+    background: rgb(80, 77, 77);
+    width: 2px;
+    height: 2px;
+}
+.text_box  figcaption{
+    font-style: italic;
+    font-size: 12px;
+}
+
+@media only screen and (min-width:850px){
+    .container_about .card_text {
+        max-width: 370px;
+    }
+    .img_box {
+        width: 300px;
+        top: -50px;
+        left: 15px;
+    }
+    .text_box p {
+        font-size: 14px;
+    }
+    .projetos{
+        max-width:none;
+    }
+
+}
+
+
+@media only screen and (min-width:1200px){
+    .container_about {
+        width: 1980px;
+
+    }
+
+    .container_about .card_text {
+        max-width: 570px;
+        margin: 30px 30px;
+        height: 330px;
+    }
+    .img_box {
+        width: 465px;
+        top: -70px;
+        left: 31px;
+        margin-top: 16px;
+    }
+}
+
+
+
+/* ====== estilo  seção 4 ====== */
+/* ==== Estilo Contatos ==== */
+.contact{
+    display: flex;
+    position: relative;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*tira os elementos de colunas melhor pro mobile */
+    background: linear-gradient(rgba(58, 56, 56, 0.548),rgba(31, 28, 28, 0.5)), url(images/1572136.png) center/ cover no-repeat;
+
+}
+
+.contact .conteudo{
+    color: #fff;
+    max-width: 60%;/*contanto o conteudo */
+    text-align: center;
+
+}
+
+.contact .conteudo h2{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Montagu Slab', serif;
+
+}
+
+.contact .conteudo p{
+    font-weight: 16px;
+    font-family: 'Montagu Slab', serif;
+}
+
+.container-info{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.contact-info{ /*informação contato  */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .box{
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+}
+
+.contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+.icon i {
+
+    color: rgb(77, 74, 74);
+}
+
+.contact-info .text{
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact-info .text h3 {
+    font-weight: 600;
+    color: #3ce4fa;
+}
+
+.contact-info .text p {
+}
+
+/* === Area de MSG ==== */
+.area-de-infor{ /*contatos  */
+    width: 40%;
+    padding: 30px;
+    background: #fff;
+}
+.area-de-infor h2{
+    color:rgb(41, 38, 38);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Montagu Slab', serif;
+}
+.input{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    color: #333;
+}
+
+.input input ,textarea{
+    width:100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 56, 121);
+    outline: none; /* para nao criar borda quando clicar dentro */
+    resize: none; /*tira a parte que deixa puxar o texto */
+
+
+}
+.input label{
+    color: rgb(21, 60, 78);
+    font-weight: 600;
+    font-size: 14px;
+}
+.input span {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: .5s;
+    color: #666;
+}
+
+.input input:focus ~span ,.input input:valid ~span,
+.input input[type="email"]:valid ~span  {
+    color: rgb(248, 4, 4);
+    font-size: 12px;
+    transform: translateY( -20px) ;
+}
+
+
+
+.input input[type="submit"] {
+    width: 100px;
+    background: linear-gradient(rgb(59, 59, 199) , violet);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+}
+#btn-contato{
+    text-align: center;
+}
+
+@media (max-width:850px){
+    .contact {
+        padding: 50px;
+
+    }
+    .container-info{
+        flex-direction: column;
+
+    }
+    .contact-info{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .area-de-infor{
+        width: 100%;
+
+    }
+
+}
+
+/* ===== Estilo rodape ===== */
+.rodape{
+    background: rgba(0, 0, 0, 0.932);
+    padding: 10px  20px 10px 20px;
+    color: rgb(187, 186, 186);
+
+}
+
+.feedback {
+    overflow-x: hidden;
+}
+
+
+.feedback h3{
+    font-size: 1.5rem ;
+    text-align: center;
+}
+.container-feedback { /*ul*/
+    margin: 2px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 15px 10px 0;
+    overflow-x: scroll;
+    
+}
+.container-feedback p {
+    color: rgb(209, 217, 223);
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.container-feedback  li {
+    margin: 0 5px;
+    background-color: rgba(59, 61, 61, 0.945);
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.container-feedback  li img {
+    max-width:100%;
+    border-radius: 50%;
+    object-fit :cover;
+}
+
+/* estilo Rodapé*/
+.container-rodape {
+    color: #fff;
+}
+
+.midia-social { /**/
+    margin-top: 10px;
+}
+
+.midia-social ul {
+    display: flex;
+
+}
+
+.midia-social  li{
+    margin-right: 15px;
+}
+.midia-social li a {
+    color: rgb(168, 168, 168);
+    font-size: 20px;
+}
+
+.nav-rodape{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.nav-rodape ul {
+}
+
+.nav-rodape ul li {
+    margin-bottom:10px ;
+}
+
+.nav-rodape ul li a {
+    color: rgb(187, 186, 186);
+    border-bottom: 1px solid #fff;
+}
+
+.rodape .diretor{
+    text-align: center;
+    width: 280px;
+    height: 250px;
+    margin: 5px;
+    
+}
+.rodape .diretor img{
+    width: 90%;
+}

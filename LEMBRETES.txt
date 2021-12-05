@@ -1,0 +1,68 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+	icons para usar sem ter q baixar nada
+
+	<a href="#" class="fab fa-facebook-f"></a>
+	<a href="#" class="fab fa-linkedin"></a>
+	<a href="#" class="fab fa-instagram"></a>
+ 	<a href="#" class="fab fa-github"></a>
+ segundo container 
+tentar fazer efeito com video e depois colcar display none com tempo e mudar para 
+alguma animação com texto ou fazer uma img em 3D
+
+object-fit :cover ajuda a img nao a nao ficar desfocada 
+
+dica lighthouse TDA
+
+colocar fotos diferente de fundo para outro dispositivos . 
+tamanho compativel 
+colocar nome dentro dos icons para melhor entendimento google display none
+otimizar as fotos para melhor visualização 
+
+	CURIOSIDADES 
+
+di> class="dot"
+ style=--"1:0;" esta criando uma variaval . fica mas facil  pra colocar tempo 
+@keyframes animar { 0% tranform: SCALE 
+dalay  animation-delay:calc(0.1s * var(--i));
+
+
+lembra de colocar overflow -x horivontal . hidden . no nav ou pai .  
+e na Li posso colocar overflow -x scroll
+
+align-items inherit
+flex-wrap ou nowrap. 
+brraking point - momento da mudança
+
+ /*colocar cor atras dos elemento, pode ser feito em varias coisas*/
+    filter:drop-shadow(0 0 10px rgb(60, 7, 253))
+
+filter: blue 20px ( faz um filtro  de desfoque .para nao ver muito bem o elemento .colcoar em px)
+
+duvida sobre midia query e position absolute 15% 
+
+font-family: 'Montagu Slab', serif;
+fonte usada
+
+
+dentro do kayframes . 
+filter: hue-rotate 0% (0) 100%(360) trocar a cor do elemento dentro do hover  troca sozinho 
+
+estudar elemetno OBJECT'FIT_ cover  (centraliza elementod dentro d video )
+
+estudar elemetno OBJECT'FIT_ cover  
+-webkit-box-reclect_ below. reflete elemetno 
+ para mudar possiçºao 3d colocar 
+
+transform-origin: bottom ,right_ right vai pra baixo 
+
+mix:blend-mode : screen (para deixa o texto vazio no meio trasparente 
+
+mix-blend-mode: overlay deixa transparente tambem
+
+
+oque e display table-cell ?
+text-transforme: uppercase transforma as letras
+text-shadow: faz sombra atras do texto .
+
+fazer um banner  coma animaçºao .... texto  COMO ESSE NAO A IGUAL 
