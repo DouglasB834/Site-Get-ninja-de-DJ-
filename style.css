@@ -12,7 +12,7 @@ body{}
 
 .container1{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/DJ+Marshmellow.jpg) fixed no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/DJ+Marshmellow.jpg) no-repeat;
     background-size: cover;
     background-position:center ;
     padding: 0 8%;
