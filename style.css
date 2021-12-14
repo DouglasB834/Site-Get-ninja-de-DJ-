@@ -788,7 +788,7 @@ iframe{
     justify-content: center;
     align-items: center;
     flex-direction: column; /*tira os elementos de colunas melhor pro mobile */
-    background: linear-gradient(rgba(58, 56, 56, 0.548),rgba(31, 28, 28, 0.5)), url(images/1572136.png) center/ cover no-repeat;
+    background: linear-gradient(rgba(58, 56, 56, 0.548),rgba(31, 28, 28, 0.5)), url(images/galeria1-600px-350.png) center/ cover no-repeat;
 
 }
 
