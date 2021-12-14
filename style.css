@@ -351,6 +351,9 @@ body{}
     .menu_top ul li a{
         font-size: 25px;
     }
+    .icons{
+        top: 40px;
+    }
     .icons a{
         font-size: 35px;
         margin: 25px 10px;
