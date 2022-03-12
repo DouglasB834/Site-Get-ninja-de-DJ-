@@ -915,7 +915,7 @@ iframe{
 
 .input input:focus ~span ,.input input:valid ~span,
 .input input[type="email"]:valid ~span  {
-    color: rgb(248, 4, 4);
+    color:#3498db;
     font-size: 12px;
     transform: translateY( -20px) ;
 }
